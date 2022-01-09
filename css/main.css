@@ -123,7 +123,7 @@ textarea {
 }
 
 .contact__list-item:first-of-type {
-  width: 248px;
+  width: 254px;
 }
 
 .contact__list-link {
@@ -150,6 +150,10 @@ textarea {
   margin-left: 15px;
 }
 
+.logo-icon-eye {
+  margin-right: 10px;
+}
+
 .contact__btn {
   display: flex;
   flex-direction: row;
@@ -157,7 +161,7 @@ textarea {
   align-items: center;
   padding: 10px 15px 8px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
@@ -610,7 +614,7 @@ textarea {
 }
 
 .footer__row {
-  width: 618px;
+  width: 624px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -619,8 +623,8 @@ textarea {
 }
 
 .footer__text {
-  margin-right: 70px;
-  width: 300px;
+  margin-right: 50px;
+  width: 325px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

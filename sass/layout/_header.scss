@@ -21,7 +21,7 @@
     border-left: 1px solid #c4c4c4;
     height: 90px;
     &:first-of-type {
-      width: 248px;
+      width: 254px;
     }
   }
   &-link {
@@ -47,6 +47,9 @@
 .logo-icon-group {
   margin-left: 15px;
 }
+.logo-icon-eye {
+  margin-right: 10px;
+}
 .contact__btn {
   display: flex;
   flex-direction: row;
@@ -55,7 +58,7 @@
   padding: 10px 15px 8px;
 
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;

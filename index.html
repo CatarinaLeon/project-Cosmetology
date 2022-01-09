@@ -8,9 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400;1,500&family=Montserrat+Alternates:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -21,351 +27,506 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="row header-top-row">
-          <ul class="contact">
-            <li><a class="logo" href="./index.html">medi</a></li>
-            <li>
-              <a class="link" href="tel:+71234567890">+7 (123) 456 78 90</a>
+        <div class="header__contact">
+          <ul class="contact__list">
+            <li class="contact__list-item">
+              <a class="contact__logo" href="./index.html">
+                <svg class="logo-icon" width="80" height="55">
+                  <use href="./images/sprite.svg#icon-logo"></use></svg
+                >MEDI
+              </a>
             </li>
-            <li><a class="link" href="#">Наши салоны</a></li>
+            <li class="contact__list-item">
+              <a class="contact__list-link" href="tel:+71234567890"
+                >+7 (123) 456 78 90</a
+              >
+            </li>
+            <li class="contact__list-item">
+              <a class="contact__list-link" href="#"
+                >Наши салоны
+                <svg class="logo-icon-group" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-group-1"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-          <button type="button" class="btn-show">
+          <button type="button" class="contact__btn">
+            <svg width="26" height="22">
+              <use href="./images/sprite.svg#icon-eye"></use>
+            </svg>
             Версия для слабовидящих
           </button>
-          <ul class="social-link">
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="https://www.facebook.com/">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="row bgc-primary header-bottom-row">
-          <nav class="nav">
-            <ul class="menu">
-              <li><a class="link" href="#">Косметология</a></li>
-              <li><a class="link" href="#">Пластическая хирургия</a></li>
-              <li><a class="link" href="#">Стоматология</a></li>
-              <li><a class="link" href="#">Лазерная медицина</a></li>
-              <li><a class="link" href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <button type="button" class="btn-sign">Запись на прием</button>
-        </div>
+        <nav class="primary">
+          <ul class="primary__list">
+            <li class="primary__list-item">
+              <a class="primary__list-link" href="">Косметология</a>
+            </li>
+            <li class="primary__list-item">
+              <a class="primary__list-link" href="">Пластическая хирургия</a>
+            </li>
+            <li class="primary__list-item">
+              <a class="primary__list-link" href="">Стоматология</a>
+            </li>
+            <li class="primary__list-item">
+              <a class="primary__list-link" href="">Лазерная медицина</a>
+            </li>
+            <li class="primary__list-item">
+              <a class="primary__list-link" href="">Контакты</a>
+            </li>
+          </ul>
+          <button type="button" class="primary__btn btn">
+            Запись на прием
+          </button>
+        </nav>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="left-colomn">
-              <h1>Косметология</h1>
-              <p>
+          <div class="hero__container">
+            <div class="hero__left-colomn">
+              <h1 class="hero__title">Косметология</h1>
+              <p class="hero__subtitle">
                 Современный мир диктует новые каноны жизни: ухоженное лицо и
                 тело, стройная, подтянутая фигура — сегодня это неотъемлемые
                 черты привлекательной внешности, характеризующие человека
                 благополучного и успешного.
               </p>
-              <button type="button">подробнее</button>
-              <ul>
-                <li>
-                  <button type="button">&larr;</button>
+              <button type="button" class="hero__button btn">подробнее</button>
+              <ul class="hero__list">
+                <li class="hero__list-item">
+                  <button type="button" class="hero__list-button arrow">
+                    &larr;
+                  </button>
                 </li>
-                <li>
-                  <button type="button">&rarr;</button>
+                <li class="hero__list-item">
+                  <button type="button" class="hero__list-button arrow">
+                    &rarr;
+                  </button>
                 </li>
               </ul>
             </div>
-            <div class="right-column">
-              <ul>
-                <li>
-                  <img
-                    src="./images/hero-img.jpg"
-                    alt="image-hero"
-                    width="746"
-                    height="533"
-                  />
-                </li>
-              </ul>
+            <div class="hero__right-column">
+              <img
+                src="./images/hero-img.jpg"
+                alt="image-hero"
+                width="745"
+                height="535"
+              />
             </div>
           </div>
-          <div class="row">
-            <ul>
-              <li>
-                <a href="">Комплексные процедуры</a>
+          <ul class="hero__botton-list">
+            <li class="hero__botton-list-item">
+              <a class="hero__botton-list-link" href=""
+                >Комплексные процедуры</a
+              >
+            </li>
+            <li class="hero__botton-list-item">
+              <a class="hero__botton-list-link" href="">Центр обучения</a>
+            </li>
+            <li class="hero__botton-list-item">
+              <a class="hero__botton-list-link" href="">VIP клиентам</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="inovation section">
+        <div class="container inovation__container">
+          <div class="innovation__card">
+            <h2 class="visually-hidden">Инновации</h2>
+            <button type="button" class="inovation__button btn">
+              Инновации
+            </button>
+            <h3 class="inovation__text">
+              Мы практикуем новый курс процедур аппаратной косметологии
+            </h3>
+            <a class="inovation__link" href="./index.html"
+              ><span class="inovation__arrow arrow">&rarr;</span>Подробнее</a
+            >
+            <img
+              src="./images/innovations__img.jpg"
+              alt="Чистка лица"
+              width="526"
+              height="230"
+              class="inovation__img"
+            />
+          </div>
+          <div class="esthetics__card">
+            <button type="button" class="esthetics__button btn">
+              Эстетика красоты
+            </button>
+            <ul class="esthetics__list">
+              <li class="esthetics__list-item">
+                <span class="esthetics__number">78</span>
+                <p class="esthetics__subtext">
+                  Современных центра в странах СНГ
+                </p>
               </li>
-              <li>
-                <a href="">Центр обучения</a>
+              <li class="esthetics__list-item">
+                <span class="esthetics__number">78</span>
+                <p class="esthetics__subtext">
+                  Современных центра в странах СНГ
+                </p>
               </li>
-              <li>
-                <a href="">VIP клиентам</a>
+              <li class="esthetics__list-item">
+                <span class="esthetics__unique">20</span>
+                <p class="esthetics__subtext-unique">
+                  Уникальных патентов в области косметологии
+                </p>
+              </li>
+              <li class="esthetics__list-item">
+                <span class="esthetics__number">78</span>
+                <p class="esthetics__subtext">
+                  Современных центра в странах СНГ
+                </p>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section class="inovation">
-        <h2 class="title-hidden">Скрытый заголовок</h2>
-        <div class="container">
-          <div class="row">
-            <div class="left-column">
-              <div class="innovation-card">
-                <button type="button">Инновации</button>
-                <h3>
-                  Мы практикуем новый курс процедур аппаратной косметологии
-                </h3>
-                <a href="./index.html"><span>&rarr;</span>Подробнее</a>
-                <img
-                  src="./images/innovations__img.jpg"
-                  alt="Чистка лица"
-                  width="526"
-                  height="230"
-                />
-              </div>
-            </div>
-            <div class="right-column">
-              <div class="achievments">
-                <button type="button">Эстетика красоты</button>
-                <ul>
-                  <li>Современных центра в странах СНГ</li>
-                  <li>Современных центра в странах СНГ</li>
-                  <li>Уникальных патентов в области косметологии</li>
-                  <li>Современных центра в странах СНГ</li>
-                </ul>
-                <img src="./images/certificate.jpg" alt="Сертификат патента" />
-              </div>
-            </div>
+      <section class="news section">
+        <div class="container news__continer">
+          <h2 class="visually-hidden">Новости</h2>
+          <div class="news__left-box">
+            <button type="button" class="news__link btn">Новости</button>
+            <ul class="news__list">
+              <li class="news__list-item">
+                <button type="button" class="news__list-btn current">
+                  Почему рекомендуется посещать профессионального косметолога.
+                  Мнение специалистов центра
+                </button>
+              </li>
+              <li class="news__list-item">
+                <button type="button" class="news__list-btn">
+                  Стандартизация деятельности клиник в соответствии с ISO
+                  9001:2015.
+                </button>
+              </li>
+              <li class="news__list-item">
+                <button type="button" class="news__list-btn">
+                  Индивидуальный подход к каждому пациенту и подбор оптимальных
+                  косметологических методик.
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="description__right-box">
+            <h3 class="description__text">
+              Почему рекомендуется посещать профессионального косметолога.
+              Мнение специалистов центра
+            </h3>
+            <ul class="description__list">
+              <li class="description__list-item">
+                Процедуры аппаратной косметологии на оборудовании экспертного
+                класса от ведущих мировых производителей могут проводиться в
+                любом возрасте и решать широкий спектр проблем: возрастные
+                изменения, покраснения, акне и купероз, потеря тонуса и
+                упругости кожи, отечность, целлюлит и т. п.
+              </li>
+              <li class="description__list-item">
+                С помощью инъекционных методик мы можем разгладить морщины,
+                провести объёмное моделирование, увлажнить кожу, ввести активные
+                вещества в поверхностные и средние слои кожи, запустить процессы
+                омоложения.
+              </li>
+              <li class="description__list-item">
+                Лазерное и фотоомоложение помогут запустить процесс синтеза
+                собственного коллагена, улучшить светооптические свойства кожи,
+                а также получить максимальный эффект подтяжки лица без уколов и
+                длительного восстановительного периода.
+              </li>
+              <li class="description__list-item">
+                Курс процедур лазерной эпиляции поможет навсегда избавиться от
+                проблемы нежелательных волос.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="news">
-        <h2 class="title-hidden">Скрытый заголовок</h2>
+      <section class="offer section">
         <div class="container">
-          <div class="row">
-            <div class="left-column">
-              <div class="box">
-                <a href="http://">Новости</a>
-                <ul>
-                  <li>
-                    <button type="button">
-                      Почему рекомендуется посещать профессионального
-                      косметолога. Мнение специалистов центра
-                    </button>
-                  </li>
-                  <li>
-                    <button type="button">
-                      Стандартизация деятельности клиник в соответствии с ISO
-                      9001:2015.
-                    </button>
-                  </li>
-                  <li>
-                    <button type="button">
-                      Индивидуальный подход к каждому пациенту и подбор
-                      оптимальных косметологических методик.
-                    </button>
-                  </li>
-                </ul>
+          <h2 class="offer__text">Актуальные спецпредложения</h2>
+          <ul class="offer__list">
+            <li class="offer__list-item">
+              <img
+                src="./images/medecine.jpg"
+                alt="work"
+                width="306"
+                height="230"
+              />
+              <button type="button" class="offer__list-btn btn">
+                Косметология
+              </button>
+              <div class="offer__list-box">
+                <h3 class="offer__list-text">Лазерное и фотоомоложение</h3>
+                <a href="#" class="arrow">&rarr;</a>
               </div>
-            </div>
-            <div class="right-column">
-              <ul>
-                <li>
-                  <article>
-                    <h3>
-                      Почему рекомендуется посещать профессионального
-                      косметолога. Мнение специалистов центра
-                    </h3>
-                    <p>
-                      Процедуры аппаратной косметологии на оборудовании
-                      экспертного класса от ведущих мировых производителей могут
-                      проводиться в любом возрасте и решать широкий спектр
-                      проблем: возрастные изменения, покраснения, акне и
-                      купероз, потеря тонуса и упругости кожи, отечность,
-                      целлюлит и т. п.
-                    </p>
-
-                    <p>
-                      С помощью инъекционных методик мы можем разгладить
-                      морщины, провести объёмное моделирование, увлажнить кожу,
-                      ввести активные вещества в поверхностные и средние слои
-                      кожи, запустить процессы омоложения.
-                    </p>
-
-                    <p>
-                      Лазерное и фотоомоложение помогут запустить процесс
-                      синтеза собственного коллагена, улучшить светооптические
-                      свойства кожи, а также получить максимальный эффект
-                      подтяжки лица без уколов и длительного восстановительного
-                      периода.
-                    </p>
-
-                    <p>
-                      Курс процедур лазерной эпиляции поможет навсегда
-                      избавиться от проблемы нежелательных волос.
-                    </p>
-                  </article>
+            </li>
+            <li class="offer__list-item">
+              <img
+                src="./images/women.jpg"
+                alt="work"
+                width="306"
+                height="230"
+              />
+              <button type="button" class="offer__list-btn btn">
+                Косметология
+              </button>
+              <div class="offer__list-box">
+                <h3 class="offer__list-text">Лазерное и фотоомоложение</h3>
+                <a href="#" class="arrow">&rarr;</a>
+              </div>
+            </li>
+            <li class="offer__list-item">
+              <img
+                src="./images/workteam.jpg"
+                alt="work"
+                width="306"
+                height="230"
+              />
+              <button type="button" class="offer__list-btn btn">
+                Косметология
+              </button>
+              <div class="offer__list-box">
+                <h3 class="offer__list-text">Лазерное и фотоомоложение</h3>
+                <a href="#" class="arrow">&rarr;</a>
+              </div>
+            </li>
+            <li class="offer__list-item">
+              <img
+                src="./images/workwith.jpg"
+                alt="work"
+                width="306"
+                height="230"
+              />
+              <button type="button" class="offer__list-btn btn">
+                Косметология
+              </button>
+              <div class="offer__list-box">
+                <h3 class="offer__list-text">Лазерное и фотоомоложение</h3>
+                <a href="#" class="arrow">&rarr;</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="servises section">
+        <div class="container servises__container">
+          <ul class="servises__list">
+            <li class="servises__list-item">
+              <h2 class="servises__list-text">Услуги</h2>
+              <ul class="attendance">
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Косметология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Пластическая хирургия</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Стоматология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Лазерная медицина</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+            <li class="servises__list-item">
+              <h2 class="servises__list-text">Услуги</h2>
+              <ul class="attendance">
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Косметология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Пластическая хирургия</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Стоматология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Лазерная медицина</a>
+                </li>
+              </ul>
+            </li>
+            <li class="servises__list-item">
+              <h2 class="servises__list-text">Услуги</h2>
+              <ul class="attendance">
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Косметология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Пластическая хирургия</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Стоматология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Лазерная медицина</a>
+                </li>
+              </ul>
+            </li>
+            <li class="servises__list-item">
+              <h2 class="servises__list-text">Услуги</h2>
+              <ul class="attendance">
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Косметология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Пластическая хирургия</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Стоматология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Лазерная медицина</a>
+                </li>
+              </ul>
+            </li>
+            <li class="servises__list-item">
+              <h2 class="servises__list-text">Услуги</h2>
+              <ul class="attendance">
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Косметология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Пластическая хирургия</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Стоматология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Лазерная медицина</a>
+                </li>
+              </ul>
+            </li>
+            <li class="servises__list-item">
+              <h2 class="servises__list-text">Услуги</h2>
+              <ul class="attendance">
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Косметология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Пластическая хирургия</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Стоматология</a>
+                </li>
+                <li class="attendance__item">
+                  <a href="" class="attendance__link">Лазерная медицина</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="adress__list">
+            <li class="adress__list-item">
+              <p class="adress__list-text">телефон</p>
+              <a class="adress__list-link" href="tel:+78121234567"
+                >+7 (812) 123-45-67</a
+              >
+            </li>
+            <li class="adress__list-item">
+              <p class="adress__list-text">адрес</p>
+              <address class="adress__list-link">
+                Невский пр. 140, пом. 10
+              </address>
+              <button type="button" class="adress-button btn">
+                как проехать?
+              </button>
+            </li>
+            <li class="adress__list-item">
+              <p class="adress__list-text">адрес</p>
+              <address class="adress__list-link">Большой пр. 12</address>
+              <button type="button" class="adress-button btn">
+                как проехать?
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="offer">
-  <h2>Актуальные спецпредложения</h2>
-  <div class="container">
-    <ul class="row">
-      <li>
-        <div>
-          <img
-            src="./images/medecine.jpg"
-            alt="work"
-            width="306"
-            height="230"
-          />
-          <button type="button">Косметология</button>
-        </div>
-        <div>
-          <h3>Лазерное и фотоомоложение</h3>
-          <a href="#">&rarr;</a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img src="./images/women.jpg" alt="work" width="306" height="230" />
-          <button type="button">Косметология</button>
-        </div>
-        <div>
-          <h3>Лазерное и фотоомоложение</h3>
-          <a href="#">&rarr;</a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img
-            src="./images/workteam.jpg"
-            alt="work"
-            width="306"
-            height="230"
-          />
-          <button type="button">Косметология</button>
-        </div>
-        <div>
-          <h3>Лазерное и фотоомоложение</h3>
-          <a href="#">&rarr;</a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <img
-            src="./images/workwith.jpg"
-            alt="work"
-            width="306"
-            height="230"
-          />
-          <button type="button">Косметология</button>
-        </div>
-        <div>
-          <h3>Лазерное и фотоомоложение</h3>
-          <a href="#">&rarr;</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-<section class="servises">
-  <div class="container">
-  <div class="row">
-    <ul>
-      <li>
-        <h2>Услуги</h2>
-        <ul>
-          <li><a href="">Косметология</a></li>
-          <li><a href="">Пластическая хирургия</a></li>
-          <li><a href="">Стоматология</a></li>
-          <li><a href="">Лазерная медицина</a></li>
-        </ul>
-      </li>
-      <li>
-        <h2>Услуги</h2>
-        <ul>
-          <li><a href="">Косметология</a></li>
-          <li><a href="">Пластическая хирургия</a></li>
-          <li><a href="">Стоматология</a></li>
-          <li><a href="">Лазерная медицина</a></li>
-        </ul>
-      </li>
-      <li>
-        <h2>Услуги</h2>
-        <ul>
-          <li><a href="">Косметология</a></li>
-          <li><a href="">Пластическая хирургия</a></li>
-          <li><a href="">Стоматология</a></li>
-          <li><a href="">Лазерная медицина</a></li>
-        </ul>
-      </li>
-      <li>
-        <h2>Услуги</h2>
-        <ul>
-          <li><a href="">Косметология</a></li>
-          <li><a href="">Пластическая хирургия</a></li>
-          <li><a href="">Стоматология</a></li>
-          <li><a href="">Лазерная медицина</a></li>
-        </ul>
-      </li>
-      <li>
-        <h2>Услуги</h2>
-        <ul>
-          <li><a href="">Косметология</a></li>
-          <li><a href="">Пластическая хирургия</a></li>
-          <li><a href="">Стоматология</a></li>
-          <li><a href="">Лазерная медицина</a></li>
-        </ul>
-      </li>
-      <li>
-        <h2>Услуги</h2>
-        <ul>
-          <li><a href="">Косметология</a></li>
-          <li><a href="">Пластическая хирургия</a></li>
-          <li><a href="">Стоматология</a></li>
-          <li><a href="">Лазерная медицина</a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <p>телефон</p>
-        <a href="tel:+78121234567">+7 (812) 123-45-67</a>
-        <p>адрес</p>
-        <address>Невский пр. 140, пом. 10</address>
-        <button type="button">как проехать?</button>
-      </li>
-      <li>
-        <p>адрес</p>
-        <address>Большой пр. 12</address>
-        <button type="button">как проехать?</button>
-      </li>
-    </ul>
-  </div>
-</div>
-</section>
     </main>
-<footer>
-    <div class="row">
-      <p>
-        &copy; 2021. Центр космелогии. Все права защищены. Наши сертификаты на
-        осуществление деятельности. Патенты на использование технологий.
-      </p>
-      <a href="" download>Политика конфиденциальности</a>
-      <button type="button">Версия для слабовидящих</button>
-      <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
-    </div>
-  </div>
-</footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__row">
+            <p class="footer__text">
+              &copy; 2021. Центр космелогии. Все права защищены. Наши
+              сертификаты на осуществление деятельности. Патенты на
+              использование технологий.
+            </p>
+            <a href="" download class="footer__link"
+              >Политика конфиденциальности</a
+            >
+          </div>
+          <button type="button" class="contact__btn">
+            <svg width="26" height="22">
+              <use href="./images/sprite.svg#icon-eye"></use>
+            </svg>
+            Версия для слабовидящих
+          </button>
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a href="">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

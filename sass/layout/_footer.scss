@@ -6,6 +6,7 @@
 }
 .footer__row {
   width: 624px;
+  height: 88px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,16 +25,9 @@
   color: var(--text-color-secondary);
 }
 .footer__link {
-  display: flex;
-  align-items: center;
-  height: 90px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: calc(18 / 12);
 
-  text-align: center;
-  text-decoration-line: underline;
-
   color: var(--text-color-secondary);
+  border-bottom: 1px solid var(--text-color-secondary);
 }

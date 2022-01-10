@@ -3,23 +3,24 @@
   z-index: 1;
   left: 112px;
   &__contact {
-    height: 90px;
+    height: 88px;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--border-color);
   }
 }
 .contact__list {
   display: flex;
   align-items: center;
   margin-right: 30px;
-  height: 90px;
+  height: 88px;
   border-right: 1px solid var(--border-color);
   &-item {
     width: 185px;
     display: flex;
     justify-content: center;
     border-left: 1px solid var(--border-color);
-    height: 90px;
+    height: 88px;
     &:first-of-type {
       width: 254px;
     }
@@ -64,13 +65,14 @@
   color: var(--text-color-primary);
   background: var(--background-secondary);
   border: none;
+  cursor: pointer;
 }
 
 .primary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  height: 88px;
   &__list {
     display: flex;
     justify-content: space-evenly;

@@ -13,12 +13,12 @@
   align-items: center;
   margin-right: 30px;
   height: 90px;
-  border-right: 1px solid #c4c4c4;
+  border-right: 1px solid var(--border-color);
   &-item {
     width: 185px;
     display: flex;
     justify-content: center;
-    border-left: 1px solid #c4c4c4;
+    border-left: 1px solid var(--border-color);
     height: 90px;
     &:first-of-type {
       width: 254px;
@@ -29,16 +29,16 @@
     align-items: center;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19 / 16);
 
-    color: #000000;
+    color: var(--text-color-secondary);
   }
 }
 .contact__logo {
   display: flex;
   align-items: center;
   font-size: 40px;
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 .logo-icon {
   margin-right: 8px;
@@ -59,10 +59,10 @@
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  line-height: calc(16 / 12);
   text-transform: uppercase;
-  color: #ffffff;
-  background: #00868a;
+  color: var(--text-color-primary);
+  background: var(--background-secondary);
   border: none;
 }
 
@@ -78,9 +78,9 @@
     &-item {
       font-weight: 500;
       font-size: 16px;
-      line-height: calc(27 / 18);
+      line-height: calc(27 / 16);
 
-      color: #ffffff;
+      color: var(--text-color-primary);
     }
   }
   &__list-link {
@@ -88,10 +88,10 @@
     font-size: 18px;
     line-height: calc(27 / 18);
 
-    color: #ffffff;
+    color: var(--text-color-primary);
   }
   &__btn {
-    background-color: #fff;
+    background-color: var(--text-color-primary);
     font-size: 18px;
     line-height: calc(21 / 18);
     margin-right: 10px;

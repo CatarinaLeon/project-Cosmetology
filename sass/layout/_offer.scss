@@ -5,7 +5,6 @@
     rgba(0, 134, 138, 0.1) 60%,
     rgba(255, 255, 255, 1) 60%
   );
-  //   opacity: 0.1;
 }
 .offer__text {
   margin-bottom: 60px;
@@ -14,7 +13,7 @@
   line-height: calc(72 / 48);
   text-align: center;
 
-  color: #00868a;
+  color: var(--background-secondary);
 }
 .offer__list {
   display: flex;
@@ -30,7 +29,7 @@
   display: flex;
   align-items: center;
   padding: 25px 30px;
-  background: #00868a;
+  background: var(--background-secondary);
 }
 .offer__list-text {
   width: 180px;
@@ -39,13 +38,13 @@
   font-size: 18px;
   line-height: calc(31 / 18);
 
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 .offer__list-btn {
   position: absolute;
   top: 30px;
   left: 30px;
 
-  color: #ffffff;
-  background: #4fbfa5;
+  color: var(--text-color-primary);
+  background: var(--background-primary);
 }

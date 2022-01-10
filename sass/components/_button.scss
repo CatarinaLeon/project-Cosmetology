@@ -2,12 +2,11 @@
   padding: 10px 15px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   border: none;
 }
 .arrow {
-  border: 1px solid white;
-  // margin-right: 30px;
+  border: 1px solid var(--text-color-primary);
   padding: 10px 15px;
-  color: white;
+  color: var(--text-color-primary);
 }

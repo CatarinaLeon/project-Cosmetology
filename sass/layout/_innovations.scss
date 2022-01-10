@@ -8,7 +8,7 @@
   width: 525px;
   padding-top: 35px;
   margin-right: 135px;
-  background: #00868a;
+  background: var(--background-secondary);
 }
 .inovation__button {
   margin-bottom: 30px;
@@ -16,10 +16,10 @@
 
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px;
+  line-height: calc(21 / 18);
 
-  color: #ffffff;
-  background: #4fbfa5;
+  color: var(--text-color-primary);
+  background: var(--background-primary);
 }
 .inovation__text {
   margin-left: 40px;
@@ -28,7 +28,7 @@
   font-size: 30px;
   line-height: calc(45 / 30);
 
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 .inovation__link {
   margin-left: 40px;
@@ -40,7 +40,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 .inovation__arrow {
   margin-right: 30px;
@@ -60,10 +60,10 @@
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px;
+  line-height: calc(21 / 18);
 
-  color: #ffffff;
-  background: #4fbfa5;
+  color: var(--text-color-primary);
+  background: var(--background-primary);
 }
 .esthetics__number {
   margin-right: 20px;
@@ -71,11 +71,11 @@
   font-size: 48px;
   line-height: calc(72 / 48);
 
-  color: #aaaaaa;
+  color: var(--border-color);
 }
 .esthetics__unique {
   margin-right: 30px;
-  color: #00868a;
+  color: var(--background-secondary);
   font-weight: 500;
   font-size: 96px;
   line-height: calc(144 / 96);
@@ -91,13 +91,16 @@
 }
 .esthetics__subtext {
   width: 145px;
+  font-weight: 500;
   font-size: 12px;
+  line-height: calc(19 / 12);
+  color: var(--border-color);
 }
 .esthetics__subtext-unique {
   width: 316px;
   font-weight: 500;
   font-size: 22px;
-  line-height: calc(36 / 22);
+  line-height: calc(30 / 22);
 
-  color: #000000;
+  color: var(--text-color-secondary);
 }

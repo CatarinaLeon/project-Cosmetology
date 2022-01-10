@@ -9,11 +9,9 @@
   display: flex;
   flex-wrap: wrap;
   width: 966px;
-  //   margin-right: -190px;
   margin-bottom: -30px;
 }
 .servises__list-item {
-  //   flex-basis: calc((100% - 570px) / 3);
   margin-right: 153px;
   margin-bottom: 30px;
 }
@@ -23,7 +21,7 @@
   font-size: 21px;
   line-height: calc(31 / 21);
 
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .attendance__item {
@@ -37,7 +35,7 @@
   font-size: 14px;
   line-height: calc(21 / 14);
 
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 .adress__list-item {
   margin-bottom: 30px;
@@ -50,8 +48,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #000000;
-
+  color: var(--text-color-secondary);
   opacity: 0.5;
 }
 .adress__list-link {
@@ -59,16 +56,16 @@
   font-size: 21px;
   line-height: calc(31 / 21);
 
-  color: #000000;
+  color: var(--text-color-secondary);
   margin-bottom: 15px;
 }
 .adress-button {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
-  color: #ffffff;
-  background: #00868a;
+  color: var(--text-color-primary);
+  background: var(--background-secondary);
 }

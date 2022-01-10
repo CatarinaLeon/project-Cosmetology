@@ -1,8 +1,8 @@
 .footer__container {
   display: flex;
   align-items: center;
-  border-top: 1px solid #c4c4c4;
-  border-left: 1px solid #c4c4c4;
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 .footer__row {
   width: 624px;
@@ -11,7 +11,7 @@
   align-items: center;
   margin-right: 30px;
 
-  border-right: 1px solid #c4c4c4;
+  border-right: 1px solid var(--border-color);
 }
 .footer__text {
   margin-right: 50px;
@@ -21,7 +21,7 @@
   font-size: 12px;
   line-height: calc(18 / 12);
 
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 .footer__link {
   display: flex;
@@ -35,5 +35,5 @@
   text-align: center;
   text-decoration-line: underline;
 
-  color: #000000;
+  color: var(--text-color-secondary);
 }

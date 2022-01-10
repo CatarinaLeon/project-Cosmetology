@@ -61,14 +61,14 @@ textarea {
   padding: 10px 15px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   border: none;
 }
 
 .arrow {
-  border: 1px solid white;
+  border: 1px solid var(--text-color-primary);
   padding: 10px 15px;
-  color: white;
+  color: var(--text-color-primary);
 }
 
 .section {
@@ -87,11 +87,11 @@ textarea {
   justify-content: center;
   align-items: center;
   height: 90px;
-  border-right: 1px solid #c4c4c4;
+  border-right: 1px solid var(--border-color);
 }
 
 .social__list-item:first-of-type {
-  border-left: 1px solid #c4c4c4;
+  border-left: 1px solid var(--border-color);
 }
 
 .header {
@@ -111,14 +111,14 @@ textarea {
   align-items: center;
   margin-right: 30px;
   height: 90px;
-  border-right: 1px solid #c4c4c4;
+  border-right: 1px solid var(--border-color);
 }
 
 .contact__list-item {
   width: 185px;
   display: flex;
   justify-content: center;
-  border-left: 1px solid #c4c4c4;
+  border-left: 1px solid var(--border-color);
   height: 90px;
 }
 
@@ -131,15 +131,15 @@ textarea {
   align-items: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  color: #000000;
+  line-height: calc(19 / 16);
+  color: var(--text-color-secondary);
 }
 
 .contact__logo {
   display: flex;
   align-items: center;
   font-size: 40px;
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .logo-icon {
@@ -162,10 +162,10 @@ textarea {
   padding: 10px 15px 8px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  line-height: calc(16 / 12);
   text-transform: uppercase;
-  color: #ffffff;
-  background: #00868a;
+  color: var(--text-color-primary);
+  background: var(--background-secondary);
   border: none;
 }
 
@@ -185,19 +185,19 @@ textarea {
 .primary__list-item {
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(27 / 18);
-  color: #ffffff;
+  line-height: calc(27 / 16);
+  color: var(--text-color-primary);
 }
 
 .primary__list-link {
   font-weight: 500;
   font-size: 18px;
   line-height: calc(27 / 18);
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .primary__btn {
-  background-color: #fff;
+  background-color: var(--text-color-primary);
   font-size: 18px;
   line-height: calc(21 / 18);
   margin-right: 10px;
@@ -227,7 +227,7 @@ textarea {
   font-weight: bold;
   font-size: 48px;
   line-height: calc(72 / 48);
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .hero__subtitle {
@@ -237,19 +237,19 @@ textarea {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .hero__button {
   margin-bottom: 45px;
   padding: 15px 25px;
-  background: #00868a;
+  background: var(--background-secondary);
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px;
+  line-height: calc(21 / 18);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .hero__botton-list {
@@ -270,14 +270,14 @@ textarea {
 }
 
 .hero__botton-list-item:nth-child(odd) {
-  background: #00868a;
+  background: var(--background-secondary);
 }
 
 .hero__botton-list-link {
   font-weight: 500;
   font-size: 21px;
   line-height: calc(31 / 21);
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .hero__list {
@@ -289,7 +289,7 @@ textarea {
 
 .hero__list-button {
   background: inherit;
-  border-color: white;
+  border-color: var(--text-color-primary);
 }
 
 .inovation {
@@ -304,7 +304,7 @@ textarea {
   width: 525px;
   padding-top: 35px;
   margin-right: 135px;
-  background: #00868a;
+  background: var(--background-secondary);
 }
 
 .inovation__button {
@@ -312,9 +312,9 @@ textarea {
   margin-left: 40px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  background: #4fbfa5;
+  line-height: calc(21 / 18);
+  color: var(--text-color-primary);
+  background: var(--background-primary);
 }
 
 .inovation__text {
@@ -323,7 +323,7 @@ textarea {
   font-weight: 500;
   font-size: 30px;
   line-height: calc(45 / 30);
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .inovation__link {
@@ -333,7 +333,7 @@ textarea {
   line-height: calc(24 / 16);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .inovation__arrow {
@@ -357,9 +357,9 @@ textarea {
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  background: #4fbfa5;
+  line-height: calc(21 / 18);
+  color: var(--text-color-primary);
+  background: var(--background-primary);
 }
 
 .esthetics__number {
@@ -367,12 +367,12 @@ textarea {
   font-weight: 500;
   font-size: 48px;
   line-height: calc(72 / 48);
-  color: #aaaaaa;
+  color: var(--border-color);
 }
 
 .esthetics__unique {
   margin-right: 30px;
-  color: #00868a;
+  color: var(--background-secondary);
   font-weight: 500;
   font-size: 96px;
   line-height: calc(144 / 96);
@@ -390,15 +390,18 @@ textarea {
 
 .esthetics__subtext {
   width: 145px;
+  font-weight: 500;
   font-size: 12px;
+  line-height: calc(19 / 12);
+  color: var(--border-color);
 }
 
 .esthetics__subtext-unique {
   width: 316px;
   font-weight: 500;
   font-size: 22px;
-  line-height: calc(36 / 22);
-  color: #000000;
+  line-height: calc(30 / 22);
+  color: var(--text-color-secondary);
 }
 
 .news {
@@ -413,7 +416,7 @@ textarea {
   width: 525px;
   padding-top: 35px;
   padding-bottom: 35px;
-  background: #4fbfa5;
+  background: var(--background-primary);
 }
 
 .news__link {
@@ -421,9 +424,9 @@ textarea {
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  background: #00868a;
+  line-height: calc(21 / 18);
+  color: var(--text-color-primary);
+  background: var(--background-secondary);
 }
 
 .news__list-item {
@@ -431,7 +434,7 @@ textarea {
   font-weight: 500;
   font-size: 18px;
   line-height: calc(27 / 18);
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .news__list-btn {
@@ -442,16 +445,16 @@ textarea {
 }
 
 .news__list-btn:hover, .news__list-btn:focus {
-  background-color: #00868a;
+  background-color: var(--background-secondary);
 }
 
 .news__list-btn.current {
-  background-color: #00868a;
+  background-color: var(--background-secondary);
 }
 
 .description__right-box {
   padding: 35px 60px;
-  background: #dbf0f0;
+  background: rgba(0, 134, 138, 0.1);
 }
 
 .description__text {
@@ -459,7 +462,7 @@ textarea {
   font-weight: bold;
   font-size: 22px;
   line-height: calc(34 / 22);
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .description__list {
@@ -472,7 +475,7 @@ textarea {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .description__list-item:last-of-type {
@@ -490,7 +493,7 @@ textarea {
   font-size: 48px;
   line-height: calc(72 / 48);
   text-align: center;
-  color: #00868a;
+  color: var(--background-secondary);
 }
 
 .offer__list {
@@ -509,7 +512,7 @@ textarea {
   display: flex;
   align-items: center;
   padding: 25px 30px;
-  background: #00868a;
+  background: var(--background-secondary);
 }
 
 .offer__list-text {
@@ -518,15 +521,15 @@ textarea {
   font-weight: bold;
   font-size: 18px;
   line-height: calc(31 / 18);
-  color: #ffffff;
+  color: var(--text-color-primary);
 }
 
 .offer__list-btn {
   position: absolute;
   top: 30px;
   left: 30px;
-  color: #ffffff;
-  background: #4fbfa5;
+  color: var(--text-color-primary);
+  background: var(--background-primary);
 }
 
 .servises {
@@ -555,7 +558,7 @@ textarea {
   font-weight: bold;
   font-size: 21px;
   line-height: calc(31 / 21);
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .attendance__item {
@@ -570,7 +573,7 @@ textarea {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .adress__list-item {
@@ -584,7 +587,7 @@ textarea {
   line-height: calc(16 / 11);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--text-color-secondary);
   opacity: 0.5;
 }
 
@@ -592,25 +595,25 @@ textarea {
   font-weight: bold;
   font-size: 21px;
   line-height: calc(31 / 21);
-  color: #000000;
+  color: var(--text-color-secondary);
   margin-bottom: 15px;
 }
 
 .adress-button {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #ffffff;
-  background: #00868a;
+  color: var(--text-color-primary);
+  background: var(--background-secondary);
 }
 
 .footer__container {
   display: flex;
   align-items: center;
-  border-top: 1px solid #c4c4c4;
-  border-left: 1px solid #c4c4c4;
+  border-top: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .footer__row {
@@ -619,7 +622,7 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-right: 30px;
-  border-right: 1px solid #c4c4c4;
+  border-right: 1px solid var(--border-color);
 }
 
 .footer__text {
@@ -629,7 +632,7 @@ textarea {
   font-weight: normal;
   font-size: 12px;
   line-height: calc(18 / 12);
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .footer__link {
@@ -642,7 +645,7 @@ textarea {
   line-height: calc(18 / 12);
   text-align: center;
   text-decoration-line: underline;
-  color: #000000;
+  color: var(--text-color-secondary);
 }
 
 .visually-hidden {
@@ -663,6 +666,6 @@ textarea {
   --background-secondary: #00868a;
   --text-color-primary: #ffffff;
   --text-color-secondary: #000000;
-  --main-font-family: Gilroy, sans-serif;
+  --border-color: #c4c4c4;
 }
 /*# sourceMappingURL=main.css.map */

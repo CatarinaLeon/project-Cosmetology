@@ -1,5 +1,6 @@
 body {
   font-family: "Lora", serif;
+  font-weight: 500;
 }
 
 .container {
@@ -59,7 +60,6 @@ textarea {
 
 .btn {
   padding: 10px 15px;
-  font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   border: none;
@@ -132,7 +132,6 @@ textarea {
 .contact__list-link {
   display: flex;
   align-items: center;
-  font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--text-color-secondary);
@@ -163,7 +162,6 @@ textarea {
   justify-content: center;
   align-items: center;
   padding: 10px 15px 8px;
-  font-weight: 500;
   font-size: 12px;
   line-height: calc(16 / 12);
   text-transform: uppercase;
@@ -187,14 +185,12 @@ textarea {
 }
 
 .primary__list-item {
-  font-weight: 500;
   font-size: 16px;
   line-height: calc(27 / 16);
   color: var(--text-color-primary);
 }
 
 .primary__list-link {
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(27 / 18);
   color: var(--text-color-primary);
@@ -238,7 +234,6 @@ textarea {
   width: 420px;
   margin-right: 135px;
   margin-bottom: 40px;
-  font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
   color: var(--text-color-primary);
@@ -248,7 +243,6 @@ textarea {
   margin-bottom: 45px;
   padding: 15px 25px;
   background: var(--background-secondary);
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(21 / 18);
   letter-spacing: 0.05em;
@@ -278,7 +272,6 @@ textarea {
 }
 
 .hero__botton-list-link {
-  font-weight: 500;
   font-size: 21px;
   line-height: calc(31 / 21);
   color: var(--text-color-primary);
@@ -314,7 +307,6 @@ textarea {
 .inovation__button {
   margin-bottom: 30px;
   margin-left: 40px;
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(21 / 18);
   color: var(--text-color-primary);
@@ -324,7 +316,6 @@ textarea {
 .inovation__text {
   margin-left: 40px;
   margin-bottom: 30px;
-  font-weight: 500;
   font-size: 30px;
   line-height: calc(45 / 30);
   color: var(--text-color-primary);
@@ -359,7 +350,6 @@ textarea {
 
 .esthetics__button {
   margin-bottom: 30px;
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(21 / 18);
   color: var(--text-color-primary);
@@ -368,7 +358,6 @@ textarea {
 
 .esthetics__number {
   margin-right: 20px;
-  font-weight: 500;
   font-size: 48px;
   line-height: calc(72 / 48);
   color: var(--border-color);
@@ -377,7 +366,6 @@ textarea {
 .esthetics__unique {
   margin-right: 30px;
   color: var(--background-secondary);
-  font-weight: 500;
   font-size: 96px;
   line-height: calc(144 / 96);
 }
@@ -394,7 +382,6 @@ textarea {
 
 .esthetics__subtext {
   width: 145px;
-  font-weight: 500;
   font-size: 12px;
   line-height: calc(19 / 12);
   color: var(--border-color);
@@ -402,7 +389,6 @@ textarea {
 
 .esthetics__subtext-unique {
   width: 316px;
-  font-weight: 500;
   font-size: 22px;
   line-height: calc(30 / 22);
   color: var(--text-color-secondary);
@@ -426,7 +412,6 @@ textarea {
 .news__link {
   margin-left: 40px;
   margin-bottom: 30px;
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(21 / 18);
   color: var(--text-color-primary);
@@ -435,7 +420,6 @@ textarea {
 
 .news__list-item {
   width: 525px;
-  font-weight: 500;
   font-size: 18px;
   line-height: calc(27 / 18);
   color: var(--text-color-primary);
@@ -473,7 +457,6 @@ textarea {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
-  font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
   color: var(--text-color-secondary);
@@ -581,7 +564,6 @@ textarea {
 }
 
 .attendance__link {
-  font-weight: 500;
   font-size: 14px;
   line-height: calc(21 / 14);
   color: var(--text-color-secondary);
@@ -593,7 +575,6 @@ textarea {
 
 .adress__list-text {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 11px;
   line-height: calc(16 / 11);
   letter-spacing: 0.05em;
@@ -611,7 +592,6 @@ textarea {
 }
 
 .adress-button {
-  font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.05em;

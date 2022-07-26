@@ -22,7 +22,7 @@
     border-left: 1px solid var(--border-color);
     height: 88px;
     &:first-of-type {
-      width: 254px;
+      width: 265px;
     }
   }
   &-link {
@@ -55,10 +55,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px 8px;
+  padding: 10px 10px 8px;
 
-  font-size: 12px;
-  line-height: calc(16 / 12);
+  font-size: 10px;
+  line-height: calc(12 / 10);
   text-transform: uppercase;
   color: var(--text-color-primary);
   background: var(--background-secondary);

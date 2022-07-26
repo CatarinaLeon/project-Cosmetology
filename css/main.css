@@ -126,7 +126,7 @@ textarea {
 }
 
 .contact__list-item:first-of-type {
-  width: 254px;
+  width: 265px;
 }
 
 .contact__list-link {
@@ -161,9 +161,9 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px 8px;
-  font-size: 12px;
-  line-height: calc(16 / 12);
+  padding: 10px 10px 8px;
+  font-size: 10px;
+  line-height: calc(12 / 10);
   text-transform: uppercase;
   color: var(--text-color-primary);
   background: var(--background-secondary);
@@ -345,7 +345,7 @@ textarea {
   padding-bottom: 60px;
   background-image: url(../images/certificate.jpg);
   background-repeat: no-repeat;
-  background-position: 103% 75%;
+  background-position: 103% 70%;
 }
 
 .esthetics__button {
@@ -608,7 +608,7 @@ textarea {
 }
 
 .footer__row {
-  width: 624px;
+  width: 635px;
   height: 88px;
   display: flex;
   justify-content: center;
